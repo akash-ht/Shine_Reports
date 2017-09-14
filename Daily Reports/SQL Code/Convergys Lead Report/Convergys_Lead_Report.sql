@@ -1,0 +1,2 @@
+
+select name,mobile_no,email, IF (current_location = 1, 'Delhi', IF(current_location = 2, 'Gurgaon', IF(current_location = 3, 'Noida', IF(current_location = 4, 'Faridabad', IF(current_location = 5, 'Other NCR','NA'))))) As Current_Location,IF(interview_slots=1,'12th April 10 AM - 4 PM',IF(interview_slots=2,'13th April 10 AM - 4 PM','NA'))AS Interview_Slots,IF(work1=1,'Yes','No') As Worked_with_Convergys_Before,IF(work2=1,'Yes','No') As Willing_to_Work_in_Night_Shifts FROM SumoPlus.convergys_convergys where date(create_date)  = date_sub(curdate(), interval 1 day);
