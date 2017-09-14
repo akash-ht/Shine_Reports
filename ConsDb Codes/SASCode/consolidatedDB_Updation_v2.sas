@@ -1,8 +1,8 @@
 
 /*************************        
-Author: Shailendra
+Author : Akash
 Description: UPDATE consolidated DB
-Date: Wed Feb 27 13:08:57 IST 2013
+Date: Wed Feb 27 13:08:57 IST 2017
 ***************************/
 %let PATH1 = /data/Analytics/Utils/consolidatedDB;
 %let lookupdir = &PATH1./Model/Lookups;
